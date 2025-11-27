@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Final Project</title>
+  </head>
+
+  <body>
+     <header>
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Start Logo" />
+          <h1>Start</h1>
+        </a>
+      </div>
+      <div class="burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="navbar">
+        <div class="close" id="close">✖</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+     <div class="overlay" id="overlay">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+     
+   
+
+    <button class="scroll-to-top" id="scrollToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <main>
+      <section class="green-sec section-animate">
+        <div class="container">
+          <div class="row row1">
+            <div class="text-content sec1">
+              <h3 class="sec1-title">WELCOME</h3>
+              <h1 class="sec1-heading">
+                Lorem ipsum dolor sit <br />amet consectetur
+              </h1>
+              <p class="sec1-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing <br />
+                elit. Suscipit nemo hic quos, ab, dolor aperiam nobis <br />
+                cum est eos error ipsum, voluptate culpa nesciunt <br />
+                delectus iste?
+              </p>
+              <button class="explore">Explore</button>
+            </div>
+            <div class="img-content firstimg">
+              <img src="img/section1img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <section class="slider-section section-animate">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide active">
+              <img src="img/img1.jpeg" alt="Mountain Landscape" />
+              <div class="slide-content">
+                <h3>Beautiful Mountains</h3>
+                <p>Experience the majesty of nature</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="img/img2.jpeg" alt="Portrait Photography" />
+              <div class="slide-content">
+                <h3>Creative Portraits</h3>
+                <p>Capturing moments that last forever</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="img/img3.jpeg" alt="Urban Architecture" />
+              <div class="slide-content">
+                <h3>Urban Architecture</h3>
+                <p>Modern design meets classic style</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="img/img4.jpeg" alt="Forest Exploration" />
+              <div class="slide-content">
+                <h3>Forest Adventure</h3>
+                <p>Discover the beauty of wilderness</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn prev-btn">&#10094;</button>
+          <button class="slider-btn next-btn">&#10095;</button>
+
+          <div class="dots-container">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="multiselect-section section-animate">
+        <div class="multiselect-container">
+          <div class="multiselect-header">
+            <h2 class="multiselect-title">Select Your Interests</h2>
+            <p class="multiselect-subtitle">
+              Choose multiple options that interest you
+            </p>
+          </div>
+          <div class="multiselect">
+            <input
+              type="text"
+              class="multiselect-input"
+              placeholder="Select your interests..."
+              readonly
+            />
+            <div class="multiselect-dropdown" id="multiselectDropdown">
+              <div class="multiselect-option" data-value="web-design">
+                Web Design
+              </div>
+              <div class="multiselect-option" data-value="graphic-design">
+                Graphic Design
+              </div>
+              <div class="multiselect-option" data-value="photography">
+                Photography
+              </div>
+              <div class="multiselect-option" data-value="branding">
+                Branding
+              </div>
+              <div class="multiselect-option" data-value="marketing">
+                Digital Marketing
+              </div>
+              <div class="multiselect-option" data-value="development">
+                Web Development
+              </div>
+            </div>
+          </div>
+          <div class="selected-items" id="selectedItems"></div>
+        </div>
+      </section>
+
+      
+
+      <section class="todo-section section-animate">
+        <div class="todo-container">
+          <div class="todo-header">
+            <h2 class="todo-title">My Todo List</h2>
+            <p class="todo-subtitle">Stay organized and productive</p>
+          </div>
+          <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="Add a new task..." />
+            <button id="addTodoBtn">Add Task</button>
+          </div>
+          <ul class="todo-list" id="todoList"></ul>
+        </div>
+      </section>
+
+      <section class="section-animate">
+        <div class="container">
+          <div class="row column">
+            <div class="text-content sec2">
+              <h3 class="partners-title">PARTNERS</h3>
+              <h1 class="partners-heading">Lorem Ipsum Dolor</h1>
+              <p class="partners-paragraph">
+                Lorem ipsum, dolor sit amet consectetur <br />
+                adipisicing elit.
+              </p>
+            </div>
+            <div class="img-content social">
+              <img src="img/google.png" alt="" />
+              <img src="img/microsoft.png" alt="" />
+              <img src="img/airbnb.png" alt="" />
+              <img src="img/facebook.png" alt="" />
+              <img src="img/spotify.png" alt="" />
+            </div>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-animate">
+        <div class="container">
+          <div class="row">
+            <div class="img-content">
+              <img src="img/people.png" alt="" />
+            </div>
+            <div class="text-content">
+              <h1>Lorem ipsum dolor sit<br />amet consectetur</h1>
+              <p class="text-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <br />Suscipit nemo hic quos, ab, dolor aperiam nobis cum est
+                eos <br />error ipsum, voluptate culpa nesciunt delectus iste?
+              </p>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-animate">
+        <div class="container">
+          <div class="row reverse">
+            <div class="img-content">
+              <img src="img/people2.png" alt="" />
+            </div>
+            <div class="text-content">
+              <h1>Lorem ipsum dolor sit<br />amet consectetur</h1>
+              <p class="text-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <br />Suscipit nemo hic quos, ab, dolor aperiam nobis cum est
+                eos <br />error ipsum, voluptate culpa nesciunt delectus iste?
+              </p>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-animate">
+        <div class="container">
+          <div class="row column">
+            <div class="text-content sec2">
+              <h3 class="team-title">TEAM</h3>
+              <h1 class="team-heading">Our Talents</h1>
+              <p class="team-paragraph">
+                Lorem ipsum, dolor sit amet consectetur <br />
+                Suscipit nemo hic quos, ab,
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="card">
+                <img src="img/card1.png" alt="" />
+                <h3 class="card-name">Peg Legge</h3>
+                <p class="card-role">CEO</p>
+              </div>
+              <div class="card">
+                <img src="img/card2.png" alt="" />
+                <h3 class="card-name">Richard Guerra</h3>
+                <p class="card-role">CTO</p>
+              </div>
+              <div class="card">
+                <img src="img/card3.png" alt="" />
+                <h3 class="card-name">Alexandra Stolz</h3>
+                <p class="card-role">DESIGNER</p>
+              </div>
+              <div class="card">
+                <img src="img/card4.png" alt="" />
+                <h3 class="card-name">Janet Bray</h3>
+                <p class="card-role">DEVELOPER</p>
+              </div>
+            </div>
+            <button>View Team</button>
+          </div>
+        </div>
+      </section>
+
+     
+    </main>
+
+    <footer>
+      <div class="footer-row">
+        <div class="footer-icon-content">
+          <a href="#"><img src="footericons/facebook.png" alt="" /></a>
+          <a href="#"><img src="footericons/instagram.png" alt="" /></a>
+          <a href="#"><img src="footericons/twitter.png" alt="" /></a>
+          <a href="#"><img src="footericons/pinterest.png" alt="" /></a>
+          <a href="#"><img src="footericons/tiktok.png" alt="" /></a>
+          <a href="#"><img src="footericons/whatsapp.png" alt="" /></a>
+          <a href="#"><img src="footericons/youtube.png" alt="" /></a>
+        </div>
+        <div class="footer-text-content">
+          &copy;Start, 2022. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

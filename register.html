@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+ <header>
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Start Logo" />
+          <h1>Start</h1>
+        </a>
+      </div>
+      <div class="burger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="navbar">
+        <div class="close" id="close">✖</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="overlay" id="overlay">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <h1>Create Account</h1>
+        <p>Join our community today</p>
+      </div>
+
+      <div class="form-container">
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              class="form-control"
+              placeholder="Enter your full name"
+            />
+            <div class="error-message">Please enter your full name</div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <div class="error-message">Please enter a valid email address</div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              class="form-control"
+              placeholder="Enter your phone number"
+            />
+            <div class="error-message">Please enter a valid phone number</div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Create a password"
+            />
+            <span class="password-toggle" id="togglePassword">👁️</span>
+            <div class="error-message">
+              Password must be at least 8 characters with uppercase, lowercase,
+              and number
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              class="form-control"
+              placeholder="Confirm your password"
+            />
+            <div class="error-message">Passwords do not match</div>
+          </div>
+
+          <div class="terms">
+            <input type="checkbox" id="agreeTerms" />
+            <label for="agreeTerms"
+              >I agree to the <a href="#">Terms of Service</a> and
+              <a href="#">Privacy Policy</a></label
+            >
+          </div>
+
+          <div
+            class="error-message"
+            id="termsError"
+            style="margin-top: -10px; margin-bottom: 20px"
+          >
+            You must agree to the terms
+          </div>
+
+          <button type="submit" class="btn">Create Account</button>
+
+          <div class="login-link">
+            Already have an account? <a href="#">Sign In</a>
+          </div>
+        </form>
+
+        <div class="success-message" id="successMessage">
+          <h3>Registration Successful!</h3>
+          <p>
+            Thank you for registering. We've sent a confirmation email to your
+            inbox.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="cookieModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Cookie Policy & Terms</h2>
+          <p>Please review our cookie usage policy</p>
+        </div>
+        <div class="modal-body">
+          <h3>Our Use of Cookies</h3>
+          <p>
+            We use cookies and similar tracking technologies to track activity
+            on our service and hold certain information. Cookies are files with
+            a small amount of data which may include an anonymous unique
+            identifier.
+          </p>
+          <p>
+            We use both session and persistent cookies on our website. Session
+            cookies are deleted when you close your browser, while persistent
+            cookies remain on your device until they expire or you delete them.
+          </p>
+          <h3>Types of Cookies We Use</h3>
+          <p>
+            • <strong>Essential Cookies:</strong> Required for the website to
+            function properly<br />
+            • <strong>Preference Cookies:</strong> Remember your settings and
+            preferences<br />
+            • <strong>Analytics Cookies:</strong> Help us understand how
+            visitors interact with our website<br />
+            • <strong>Marketing Cookies:</strong> Used to track visitors across
+            websites to display relevant ads
+          </p>
+          <p>
+            By agreeing to our cookie policy, you consent to the use of cookies
+            as described in our <a href="#">Cookie Policy</a> and
+            <a href="#">Privacy Policy</a>.
+          </p>
+          <div class="cookie-terms">
+            <input type="checkbox" id="agreeCookieTerms" />
+            <label for="agreeCookieTerms"
+              >I agree to the use of cookies as described above and in the
+              <a href="#">Cookie Policy</a></label
+            >
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-btn btn-disagree" id="disagreeBtn">
+            Disagree
+          </button>
+          <button class="modal-btn btn-agree" id="agreeBtn">Agree</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="register.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>
